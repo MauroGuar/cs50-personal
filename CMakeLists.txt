@@ -6,6 +6,7 @@ set(CMAKE_C_COMPILER "clang")
 
 include_directories(/usr/lib)
 
-add_executable(cs50_personal volume.c)
+add_executable(cs50_personal filter-more/filter.c filter-more/helpers.c)
 
-target_link_libraries(cs50_personal /usr/lib/libcs50.so m)
+# target_link_libraries(cs50_personal /usr/lib/libcs50.so m)
+target_link_libraries(cs50_personal m)
