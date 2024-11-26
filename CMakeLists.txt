@@ -6,7 +6,8 @@ set(CMAKE_C_COMPILER "clang")
 
 include_directories(/usr/lib)
 
-add_executable(cs50_personal recover/recover.c)
+add_executable(cs50_personal linked.c
+        linked.c)
 
 # target_link_libraries(cs50_personal /usr/lib/libcs50.so m)
 target_link_libraries(cs50_personal m)
