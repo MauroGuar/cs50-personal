@@ -9,9 +9,10 @@ typedef struct node {
 
 int main() {
     int numbers[] = {1, 2, 3};
+    short numbers_size = sizeof(numbers) / sizeof(numbers[0]);
 
     node *list = NULL;
-    for (int i = 0; i < sizeof(numbers); ++i) {
+    for (int i = 0; i < numbers_size; ++i) {
         node *n = malloc(sizeof(node));
         if (n == NULL) {
             return 1;
@@ -31,6 +32,14 @@ int main() {
     }
 
     for (node *ptr = list; ptr != NULL; ptr = ptr->next) {
-        printf("%i/n", ptr->number);
+        printf("%i\n", ptr->number);
     }
+
+    while (list != NULL) {
+        node *temp = list;
+        list = list->next;
+        free(temp);
+    }
+
+    return 0;
 }
