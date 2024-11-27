@@ -75,3 +75,12 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
+/recover/card.raw
+/filter-more/images/courtyard.bmp
+/filter-more/images/courtyard-blur.bmp
+/filter-more/images/courtyard-grayscale.bmp
+/filter-more/images/courtyard-reflect.bmp
+/filter-more/Makefile
+/filter-more/images/stadium.bmp
+/filter-more/images/tower.bmp
+/filter-more/images/yard.bmp
