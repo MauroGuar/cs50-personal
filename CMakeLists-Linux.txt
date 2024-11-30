@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.22.1)
+project(cs50_personal C)
+
+set(CMAKE_C_STANDARD 23)
+set(CMAKE_C_COMPILER "clang")
+
+set(CMAKE_C_FLAGS_DEBUG "-ggdb3 -gdwarf-4 -O0 -Qunused-arguments -Wall -Werror -Wextra -Wno-gnu-folding-constant -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow")
+
+include_directories(/usr/lib)
+
+add_executable(cs50_personal speller/speller.c speller/dictionary.c)
+
+#add_executable(cs50_personal main.c)
+
+# target_link_libraries(cs50_personal /usr/lib/libcs50.so m)
+target_link_libraries(cs50_personal m)
