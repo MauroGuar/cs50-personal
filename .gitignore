@@ -84,3 +84,5 @@ fabric.properties
 /filter-more/images/stadium.bmp
 /filter-more/images/tower.bmp
 /filter-more/images/yard.bmp
+
+CMakeLists.txt
